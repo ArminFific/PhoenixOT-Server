@@ -66,7 +66,7 @@
 		<item name="blue piece of cloth" chance="5000" />
 		<item name="shard" chance="100000" />
 		<item name="queen's sceptre" chance="1500" />
-		<item name="berserk potion" chance="1500" />
+		<!-- <item name="berserk potion" chance="1500" /> -->
 		<item name="mastermind potion" chance="1500" />
 		<item name="bullseye potion" chance="1500" />
 		<item name="crystal sword" chance="4000" />

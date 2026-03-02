@@ -40240,8 +40240,8 @@ imbuementslots = 3
 [[items]]
 id = 7439
 article = "a"
-name = "berserk potion"
-description = "Drinking this potion increases temporarily your fighting skill while decreasing your defense."
+name = "stamina potion"
+description = "Drinking this potion will make you feel fully rested."
 weight = 200
 
 [[items]]

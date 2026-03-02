@@ -65,7 +65,7 @@
 		<item name="opal" countmax="2" chance="2240" />
 		<item name="war hammer" chance="1510" />
 		<item name="ogre choppa" chance="1160" />
-		<item name="berserk potion" chance="520" />
+		<!-- <item name="berserk potion" chance="520" /> -->
 		<item name="shamanic mask" chance="340" />
 		<item name="dreaded cleaver" chance="40" />
 	</loot>

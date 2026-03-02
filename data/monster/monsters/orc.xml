@@ -45,4 +45,10 @@
 		<item id="12435" name="orc leather" chance="359" />
 		<item id="11113" name="orc tooth" chance="55" />
 	</loot>
+	<skills>
+        <skill name="level" level="40" max="100" formula="2" multiplier="1.5" difficulty="50" threshold="10"/>
+    </skills>
+    <script>
+        <event name="MonsterLevelThink"/>
+    </script>
 </monster>

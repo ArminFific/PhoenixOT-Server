@@ -1,8 +1,8 @@
-local berserk = Condition(CONDITION_ATTRIBUTES)
-berserk:setParameter(CONDITION_PARAM_TICKS, 10 * 60 * 1000)
-berserk:setParameter(CONDITION_PARAM_SKILL_MELEE, 5)
-berserk:setParameter(CONDITION_PARAM_SKILL_SHIELD, -10)
-berserk:setParameter(CONDITION_PARAM_BUFF_SPELL, true)
+-- local berserk = Condition(CONDITION_ATTRIBUTES)
+-- berserk:setParameter(CONDITION_PARAM_TICKS, 10 * 60 * 1000)
+-- berserk:setParameter(CONDITION_PARAM_SKILL_MELEE, 5)
+-- berserk:setParameter(CONDITION_PARAM_SKILL_SHIELD, -10)
+-- berserk:setParameter(CONDITION_PARAM_BUFF_SPELL, true)
 
 local mastermind = Condition(CONDITION_ATTRIBUTES)
 mastermind:setParameter(CONDITION_PARAM_TICKS, 10 * 60 * 1000)
@@ -20,13 +20,13 @@ local potions = {
 		transform = {7588, 7589},
 		effect = CONST_ME_DRAWBLOOD
 	},
-	[7439] = { -- berserk potion
-		condition = berserk,
-		vocations = {4, 8},
-		effect = CONST_ME_MAGIC_RED,
-		description = "Only knights may drink this potion.",
-		text = "You feel stronger."
-	},
+	-- [7439] = { -- berserk potion
+	-- 	condition = berserk,
+	-- 	vocations = {4, 8},
+	-- 	effect = CONST_ME_MAGIC_RED,
+	-- 	description = "Only knights may drink this potion.",
+	-- 	text = "You feel stronger."
+	-- },
 	[7440] = { -- mastermind potion
 		condition = mastermind,
 		vocations = {1, 2, 5, 6},

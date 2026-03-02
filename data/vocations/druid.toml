@@ -1,6 +1,6 @@
 [Druid]
 id = 2
-cid = 4
+cid = 3
 pvp = true
 name = "Druid"
 description = "a druid"
@@ -8,25 +8,24 @@ speed = 220
 maxsoul = 100
 attackspeed = 2000
 promotedfrom = 2
-inactivekicktime = 40
 statsperlevel = [
     {cap = 10, hp = 5, mana = 30}
 ]
 regeneration = [
     {hp = {amount = 5, interval = 6}},
-    {mana = {amount = 5, interval = 3}},
+    {mana = {amount = 15, interval = 3}},
     {soul = {amount = 1, interval = 120}}
 ]
 damagemodifiers = [
     {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.0}
 ]
 skillrates = [
-    {magic = 1.1, fist = 1.5, club = 1.8, sword = 1.8, axe = 1.8, distance = 1.8, shield = 1.5, fishing = 1.1}
+    {magic = 1.1, fist = 2.0, club = 2.0, sword = 2.0, axe = 2.0, distance = 2.0, shield = 2.0, fishing = 1.0}
 ]
 
 [ElderDruid]
 id = 6
-cid = 4
+cid = 3
 pvp = true
 name = "Elder Druid"
 description = "an elder druid"
@@ -34,18 +33,67 @@ speed = 220
 maxsoul = 200
 attackspeed = 2000
 promotedfrom = 2
-inactivekicktime = 40
 statsperlevel = [
     {cap = 10, hp = 5, mana = 30}
 ]
 regeneration = [
-    {hp = {amount = 10, interval = 4}},
-    {mana = {amount = 10, interval = 2}},
+    {hp = {amount = 8, interval = 6}},
+    {mana = {amount = 25, interval = 2}},
     {soul = {amount = 1, interval = 15}}
 ]
 damagemodifiers = [
     {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.0}
 ]
 skillrates = [
-    {magic = 1.1, fist = 1.5, club = 1.8, sword = 1.8, axe = 1.8, distance = 1.8, shield = 1.5, fishing = 1.1}
+    {magic = 1.1, fist = 2.0, club = 2.0, sword = 2.0, axe = 2.0, distance = 2.0, shield = 2.0, fishing = 1.0}
+]
+
+[HighDruid]
+id = 11
+cid = 3
+pvp = true
+name = "High Druid"
+description = "a high druid"
+speed = 225
+maxsoul = 300
+attackspeed = 2000
+promotedfrom = 6
+statsperlevel = [
+    {cap = 10, hp = 8, mana = 40}
+]
+regeneration = [
+    {hp = {amount = 15, interval = 4}},
+    {mana = {amount = 38, interval = 2}},
+    {soul = {amount = 1, interval = 10}}
+]
+damagemodifiers = [
+    {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.1}
+]
+skillrates = [
+    {magic = 1.0, fist = 2.0, club = 2.0, sword = 2.0, axe = 2.0, distance = 2.0, shield = 2.0, fishing = 1.0}
+]
+
+[Archdruid]
+id = 15
+cid = 3
+pvp = true
+name = "Archdruid"
+description = "an archdruid"
+speed = 230
+maxsoul = 400
+attackspeed = 2000
+promotedfrom = 11
+statsperlevel = [
+    {cap = 10, hp = 12, mana = 55}
+]
+regeneration = [
+    {hp = {amount = 28, interval = 3}},
+    {mana = {amount = 60, interval = 2}},
+    {soul = {amount = 1, interval = 6}}
+]
+damagemodifiers = [
+    {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.2}
+]
+skillrates = [
+    {magic = 1.0, fist = 2.0, club = 2.0, sword = 2.0, axe = 2.0, distance = 2.0, shield = 2.0, fishing = 1.0}
 ]

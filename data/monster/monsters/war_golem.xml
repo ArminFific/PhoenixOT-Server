@@ -73,7 +73,7 @@
 		<item name="berserker" chance="50" />
 		<item name="jade hammer" chance="120" />
 		<item name="bonebreaker" chance="770" />
-		<item name="berserk potion" chance="900" />
+		<!-- <item name="berserk potion" chance="900" /> -->
 		<item name="great mana potion" chance="8860" />
 		<item name="lightning boots" chance="90" />
 		<item name="nail" countmax="5" chance="5260" />
