@@ -26,3 +26,24 @@ db-data
 
 # Log files
 blacktek.log
+
+# RSA Private Key
+key.pem
+
+# Map files (large binary, manage separately)
+*.otbm
+
+# OTB item files (binary)
+*.otb
+
+# Data logs and reports
+data/logs/*
+data/reports/bugs/*
+data/reports/players/*
+
+# House files
+data/world/*.xml
+!data/world/forgotten-zones/
+
+# Cache
+data/lib/debugging/*
