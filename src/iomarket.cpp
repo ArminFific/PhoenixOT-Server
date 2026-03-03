@@ -125,7 +125,7 @@ void IOMarket::processExpiredOffers(const DBResult_ptr& result, bool)
 			if (itemType.stackable) {
 				uint16_t tmpAmount = amount;
 				while (tmpAmount > 0) {
-					uint16_t stackCount = std::min<uint16_t>(100, tmpAmount);
+					uint16_t stackCount = std::min<uint16_t>(1000, tmpAmount);
 					auto item = Item::CreateItem(itemType.getID(), stackCount);
 					if (CylinderPtr inbox = player->getInbox(); g_game.internalAddItem(inbox, item, INDEX_WHEREEVER, FLAG_NOLIMIT) != RETURNVALUE_NOERROR) {
 						break;

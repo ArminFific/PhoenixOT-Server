@@ -1,4 +1,4 @@
-// Copyright 2024 Black Tek Server Authors. All rights reserved.
+﻿// Copyright 2024 Black Tek Server Authors. All rights reserved.
 // Use of this source code is governed by the GPL-2.0 License that can be found in the LICENSE file.
 
 #include "otpch.h"
@@ -3298,8 +3298,8 @@ ReturnValue Player::queryMaxCount(int32_t index, const ThingPtr& thing, uint32_t
 							n += queryCount;
 						}
 					}
-				} else if (inventoryItem->isStackable() && item->equals(inventoryItem) && inventoryItem->getItemCount() < 100) {
-					const uint32_t remainder = (100 - inventoryItem->getItemCount());
+				} else if (inventoryItem->isStackable() && item->equals(inventoryItem) && inventoryItem->getItemCount() < 1000) {
+					const uint32_t remainder = (1000 - inventoryItem->getItemCount());
 
 					if (queryAdd(slotIndex, item, remainder, flags) == RETURNVALUE_NOERROR) {
 						n += remainder;
@@ -3307,7 +3307,7 @@ ReturnValue Player::queryMaxCount(int32_t index, const ThingPtr& thing, uint32_t
 				}
 			} else if (queryAdd(slotIndex, item, item->getItemCount(), flags) == RETURNVALUE_NOERROR) { //empty slot
 				if (item->isStackable()) {
-					n += 100;
+					n += 1000;
 				} else {
 					++n;
 				}
@@ -3323,14 +3323,14 @@ ReturnValue Player::queryMaxCount(int32_t index, const ThingPtr& thing, uint32_t
 		}
 
 		if (destItem) {
-			if (destItem->isStackable() && item->equals(destItem) && destItem->getItemCount() < 100) {
-				maxQueryCount = 100 - destItem->getItemCount();
+			if (destItem->isStackable() && item->equals(destItem) && destItem->getItemCount() < 1000) {
+				maxQueryCount = 1000 - destItem->getItemCount();
 			} else {
 				maxQueryCount = 0;
 			}
 		} else if (queryAdd(index, item, count, flags) == RETURNVALUE_NOERROR) { //empty slot
 			if (item->isStackable()) {
-				maxQueryCount = 100;
+				maxQueryCount = 1000;
 			} else {
 				maxQueryCount = 1;
 			}
@@ -3394,7 +3394,7 @@ CylinderPtr Player::queryDestination(int32_t& index, const ThingPtr& thing, Item
 				if (autoStack && isStackable) {
 					// Try to find an already existing item to stack with
 					if (queryAdd(slotIndex, item, item->getItemCount(), 0) == RETURNVALUE_NOERROR) {
-						if (inventoryItem->equals(item) && inventoryItem->getItemCount() < 100) {
+						if (inventoryItem->equals(item) && inventoryItem->getItemCount() < 1000) {
 							index = slotIndex;
 							destItem = inventoryItem;
 							return this->getPlayer();
@@ -3434,7 +3434,7 @@ CylinderPtr Player::queryDestination(int32_t& index, const ThingPtr& thing, Item
 						continue;
 					}
 
-					if (autoStack && isStackable && tmpContainerItem->equals(item) && tmpContainerItem->getItemCount() < 100) {
+					if (autoStack && isStackable && tmpContainerItem->equals(item) && tmpContainerItem->getItemCount() < 1000) {
 						index = tmpContainer->size();
 						destItem = tmpContainerItem;
 						return tmpContainer;
@@ -3559,7 +3559,7 @@ void Player::removeThing(ThingPtr thing, uint32_t count)
 			item->clearParent();
 			inventory[index] = nullptr;
 		} else {
-			uint8_t newCount = static_cast<uint8_t>(std::max<int32_t>(0, item->getItemCount() - count));
+			uint16_t newCount = static_cast<uint16_t>(std::max<int32_t>(0, item->getItemCount() - count));
 			item->setItemCount(newCount);
 
 			//send change to client

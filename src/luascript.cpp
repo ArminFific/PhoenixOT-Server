@@ -3682,8 +3682,8 @@ int LuaScriptInterface::luaDoPlayerAddItem(lua_State* L)
 
 	while (itemCount > 0) {
 		uint16_t stackCount = subType;
-		if (it.stackable && stackCount > 100) {
-			stackCount = 100;
+		if (it.stackable && stackCount > 1000) {
+			stackCount = 1000;
 		}
 
 		auto newItem = Item::CreateItem(itemId, stackCount);
@@ -9292,7 +9292,7 @@ int LuaScriptInterface::luaContainerAddItem(lua_State* L)
 	uint32_t flags = getNumber<uint32_t>(L, 5, 0);
 
 	for (int32_t i = 1; i <= itemCount; ++i) {
-		const int32_t stackCount = std::min<int32_t>(subType, 100);
+		const int32_t stackCount = std::min<int32_t>(subType, 1000);
 		auto item = Item::CreateItem(itemId, stackCount);
 		if (!item) {
 			reportErrorFunc(L, getErrorDesc(LUA_ERROR_ITEM_NOT_FOUND));
@@ -12570,7 +12570,7 @@ int LuaScriptInterface::luaPlayerAddItem(lua_State* L)
 	for (int32_t i = 1; i <= itemCount; ++i) {
 		int32_t stackCount = subType;
 		if (it.stackable) {
-			stackCount = std::min<int32_t>(stackCount, 100);
+			stackCount = std::min<int32_t>(stackCount, 1000);
 			subType -= stackCount;
 		}
 

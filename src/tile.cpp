@@ -1178,7 +1178,7 @@ void Tile::removeThing(ThingPtr thing, uint32_t count)
 		}
 
 		if (itemType.stackable && count != item->getItemCount()) {
-			const uint8_t newCount = static_cast<uint8_t>(std::max<int32_t>(0, static_cast<int32_t>(item->getItemCount() - count)));
+			const uint16_t newCount = static_cast<uint16_t>(std::max<int32_t>(0, static_cast<int32_t>(item->getItemCount() - count)));
 			item->setItemCount(newCount);
 			onUpdateTileItem(item, itemType, item, itemType);
 		} else {

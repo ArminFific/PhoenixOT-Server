@@ -392,22 +392,22 @@ ReturnValue Container::queryMaxCount(int32_t index, const ThingPtr& thing, uint3
 			//Iterate through every item and check how much free stackable slots there is.
 			uint32_t slotIndex = 0;
 			for (auto containerItem : itemlist) {
-				if (containerItem != item && containerItem->equals(item) && containerItem->getItemCount() < 100) {
+				if (containerItem != item && containerItem->equals(item) && containerItem->getItemCount() < 1000) {
 					if (queryAdd(slotIndex++, item, count, flags) == RETURNVALUE_NOERROR) {
-						n += 100 - containerItem->getItemCount();
+						n += 1000 - containerItem->getItemCount();
 					}
 				}
 			}
 		} else {
 			const auto destItem = getItemByIndex(index);
-			if (item->equals(destItem) && destItem->getItemCount() < 100) {
+			if (item->equals(destItem) && destItem->getItemCount() < 1000) {
 				if (queryAdd(index, item, count, flags) == RETURNVALUE_NOERROR) {
-					n = 100 - destItem->getItemCount();
+					n = 1000 - destItem->getItemCount();
 				}
 			}
 		}
 
-		maxQueryCount = freeSlots * 100 + n;
+		maxQueryCount = freeSlots * 1000 + n;
 		if (maxQueryCount < count) {
 			return RETURNVALUE_CONTAINERNOTENOUGHROOM;
 		}
@@ -495,14 +495,15 @@ CylinderPtr Container::queryDestination(int32_t& index, const ThingPtr& thing, I
 
 	bool autoStack = !hasBitSet(FLAG_IGNOREAUTOSTACK, flags);
 	if (autoStack && item->isStackable() && item->getParent().get() != this) {
-		if (destItem && destItem->equals(item) && destItem->getItemCount() < 100) {
+		if (destItem && destItem->equals(item) && destItem->getItemCount() < 1000) {
 			return getContainer();
 		}
 
 		// Try to find a suitable item to stack with
 		uint32_t n = 0;
 		for (const auto& listItem : itemlist) {
-			if (listItem != item && listItem->equals(item) && listItem->getItemCount() < 100) {
+			if (listItem != item && listItem->equals(item) && listItem->getItemCount() < 1000) {
+
 				destItem = listItem;
 				index = n;
 				return getContainer();
@@ -618,7 +619,7 @@ void Container::removeThing(ThingPtr thing, uint32_t count)
 	}
 
 	if (item->isStackable() && count != item->getItemCount()) {
-		uint8_t newCount = static_cast<uint8_t>(std::max<int32_t>(0, item->getItemCount() - count));
+		uint16_t newCount = static_cast<uint16_t>(std::max<int32_t>(0, item->getItemCount() - count));
 		const int32_t oldWeight = item->getWeight();
 		ammoCount -= (item->getItemCount() - newCount);
 		item->setItemCount(newCount);

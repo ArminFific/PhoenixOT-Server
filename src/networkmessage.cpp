@@ -79,7 +79,7 @@ void NetworkMessage::addPosition(const Position& pos)
 	addByte(pos.z);
 }
 
-void NetworkMessage::addItem(uint16_t id, uint8_t count)
+void NetworkMessage::addItem(uint16_t id, uint16_t count)
 {
 	const ItemType& it = Item::items[id];
 
@@ -88,7 +88,7 @@ void NetworkMessage::addItem(uint16_t id, uint8_t count)
 	addByte(0xFF); // MARK_UNMARKED
 
 	if (it.stackable) {
-		addByte(count);
+		add<uint16_t>(count);
 	} else if (it.isSplash() || it.isFluidContainer()) {
 		addByte(fluidMap[count & 7]);
 	}
@@ -106,7 +106,7 @@ void NetworkMessage::addItem(const ItemConstPtr& item)
 	addByte(0xFF); // MARK_UNMARKED
 
 	if (it.stackable) {
-		addByte(std::min<uint16_t>(0xFF, item->getItemCount()));
+		add<uint16_t>(item->getItemCount());
 	} else if (it.isSplash() || it.isFluidContainer()) {
 		addByte(fluidMap[item->getFluidType() & 7]);
 	}

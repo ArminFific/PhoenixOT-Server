@@ -1082,7 +1082,7 @@ void ProtocolGame::parseThrow(NetworkMessage& msg)
 	uint16_t spriteId = msg.get<uint16_t>();
 	uint8_t fromStackpos = msg.getByte();
 	Position toPos = msg.getPosition();
-	uint8_t count = msg.getByte();
+	uint16_t count = msg.get<uint16_t>();
 
 	if (toPos != fromPos)
 	{
@@ -1183,7 +1183,7 @@ void ProtocolGame::parseFollow(NetworkMessage& msg)
 void ProtocolGame::parseEquipObject(NetworkMessage& msg)
 {
 	uint16_t spriteID = msg.get<uint16_t>();
-	// msg.get<uint8_t>();
+	msg.get<uint16_t>(); // countOrSubType (sent by client, unused server-side)
 
 	addGameTaskTimed(DISPATCHER_TASK_EXPIRATION, [=, playerID = player->getID()]() { g_game.playerEquipItem(playerID, spriteID); });
 }
@@ -1228,7 +1228,7 @@ void ProtocolGame::parseWrapItem(NetworkMessage& msg)
 void ProtocolGame::parseLookInShop(NetworkMessage& msg)
 {
 	uint16_t id = msg.get<uint16_t>();
-	uint8_t count = msg.getByte();
+	uint16_t count = msg.get<uint16_t>();
 	addGameTaskTimed(DISPATCHER_TASK_EXPIRATION, [=, playerID = player->getID()]() { g_game.playerLookInShop(playerID, id, count); });
 }
 

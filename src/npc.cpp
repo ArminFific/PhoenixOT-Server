@@ -1145,7 +1145,7 @@ int NpcScriptInterface::luaDoSellItem(lua_State* L)
 	{
 		while (amount > 0)
 		{
-			int32_t stackCount = std::min<int32_t>(100, amount);
+			int32_t stackCount = std::min<int32_t>(1000, amount);
 			const auto& item = Item::CreateItem(it.getID(), stackCount);
 			if (item and actionId != 0)
 			{

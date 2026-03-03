@@ -95,7 +95,7 @@ class NetworkMessage
 
 		// write functions for complex types
 		void addPosition(const Position& pos);
-		void addItem(uint16_t id, uint8_t count);
+		void addItem(uint16_t id, uint16_t count);
 		void addItem(const ItemConstPtr& item);
 		void addItemId(uint16_t itemId);
 

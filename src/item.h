@@ -1103,7 +1103,7 @@ class Item : virtual public Thing, public SharedObject
 			return count;
 		}
 	
-		void setItemCount(uint8_t n) {
+		void setItemCount(uint16_t n) {
 			count = n;
 		}
 
@@ -1347,7 +1347,7 @@ class Item : virtual public Thing, public SharedObject
 
 	private:
 		uint16_t imbuementSlots = 0;
-		uint8_t count = 1; // number of stacked items
+		uint16_t count = 1; // number of stacked items
 		bool loadedFromMap = false;
         std::string getWeightDescription(uint32_t weight) const;
 };
