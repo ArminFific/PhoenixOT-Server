@@ -1,0 +1,99 @@
+[Paladin]
+id = 3
+cid = 4
+pvp = true
+name = "Paladin"
+description = "a paladin"
+speed = 220
+maxsoul = 100
+attackspeed = 2000
+promotedfrom = 3
+statsperlevel = [
+    {cap = 15, hp = 10, mana = 15}
+]
+regeneration = [
+    {hp = {amount = 8, interval = 4}},
+    {mana = {amount = 10, interval = 3}},
+    {soul = {amount = 1, interval = 120}}
+]
+damagemodifiers = [
+    {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.0}
+]
+skillrates = [
+    {magic = 1.4, fist = 1.5, club = 1.5, sword = 1.5, axe = 1.5, distance = 1.1, shield = 1.4, fishing = 1.1}
+]
+
+[RoyalPaladin]
+id = 7
+cid = 4
+pvp = true
+name = "Royal Paladin"
+description = "a royal paladin"
+speed = 220
+maxsoul = 200
+attackspeed = 2000
+promotedfrom = 3
+statsperlevel = [
+    {cap = 15, hp = 10, mana = 15}
+]
+regeneration = [
+    {hp = {amount = 12, interval = 3}},
+    {mana = {amount = 18, interval = 2}},
+    {soul = {amount = 1, interval = 15}}
+]
+damagemodifiers = [
+    {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.0}
+]
+skillrates = [
+    {magic = 1.4, fist = 1.5, club = 1.5, sword = 1.5, axe = 1.5, distance = 1.1, shield = 1.4, fishing = 1.1}
+]
+
+[Templar]
+id = 12
+cid = 4
+pvp = true
+name = "Templar"
+description = "a templar"
+speed = 228
+maxsoul = 300
+attackspeed = 1950
+promotedfrom = 7
+statsperlevel = [
+    {cap = 20, hp = 13, mana = 20}
+]
+regeneration = [
+    {hp = {amount = 20, interval = 3}},
+    {mana = {amount = 28, interval = 2}},
+    {soul = {amount = 1, interval = 10}}
+]
+damagemodifiers = [
+    {armor = 1.03, defense = 1.03, distance = 1.08, melee = 1.05}
+]
+skillrates = [
+    {magic = 1.3, fist = 1.4, club = 1.4, sword = 1.4, axe = 1.4, distance = 1.0, shield = 1.3, fishing = 1.1}
+]
+
+[DivineSentinel]
+id = 16
+cid = 4
+pvp = true
+name = "Divine Sentinel"
+description = "a divine sentinel"
+speed = 235
+maxsoul = 400
+attackspeed = 1900
+promotedfrom = 12
+statsperlevel = [
+    {cap = 25, hp = 18, mana = 28}
+]
+regeneration = [
+    {hp = {amount = 35, interval = 2}},
+    {mana = {amount = 45, interval = 2}},
+    {soul = {amount = 1, interval = 6}}
+]
+damagemodifiers = [
+    {armor = 1.08, defense = 1.08, distance = 1.18, melee = 1.12}
+]
+skillrates = [
+    {magic = 1.3, fist = 1.4, club = 1.4, sword = 1.4, axe = 1.4, distance = 1.0, shield = 1.3, fishing = 1.1}
+]

@@ -1,0 +1,99 @@
+[Sorcerer]
+id = 1
+cid = 2
+pvp = true
+name = "Sorcerer"
+description = "a sorcerer"
+speed = 220
+maxsoul = 100
+attackspeed = 2000
+promotedfrom = 1
+statsperlevel = [
+    {cap = 10, hp = 5, mana = 30}
+]
+regeneration = [
+    {hp = {amount = 5, interval = 6}},
+    {mana = {amount = 15, interval = 3}},
+    {soul = {amount = 1, interval = 120}}
+]
+damagemodifiers = [
+    {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.0}
+]
+skillrates = [
+    {magic = 1.1, fist = 2.0, club = 2.0, sword = 2.0, axe = 2.0, distance = 2.0, shield = 2.0, fishing = 1.1}
+]
+
+[MasterSorcerer]
+id = 5
+cid = 2
+pvp = true
+name = "Master Sorcerer"
+description = "a master sorcerer"
+speed = 220
+maxsoul = 200
+attackspeed = 2000
+promotedfrom = 1
+statsperlevel = [
+    {cap = 10, hp = 5, mana = 30}
+]
+regeneration = [
+    {hp = {amount = 8, interval = 6}},
+    {mana = {amount = 25, interval = 2}},
+    {soul = {amount = 1, interval = 15}}
+]
+damagemodifiers = [
+    {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.0}
+]
+skillrates = [
+    {magic = 1.1, fist = 2.0, club = 2.0, sword = 2.0, axe = 2.0, distance = 2.0, shield = 2.0, fishing = 1.1}
+]
+
+[Archmage]
+id = 10
+cid = 2
+pvp = true
+name = "Archmage"
+description = "an archmage"
+speed = 225
+maxsoul = 300
+attackspeed = 2000
+promotedfrom = 5
+statsperlevel = [
+    {cap = 10, hp = 5, mana = 45}
+]
+regeneration = [
+    {hp = {amount = 12, interval = 6}},
+    {mana = {amount = 40, interval = 2}},
+    {soul = {amount = 1, interval = 10}}
+]
+damagemodifiers = [
+    {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.12}
+]
+skillrates = [
+    {magic = 1.0, fist = 2.0, club = 2.0, sword = 2.0, axe = 2.0, distance = 2.0, shield = 2.0, fishing = 1.1}
+]
+
+[GrandArchmage]
+id = 14
+cid = 2
+pvp = true
+name = "Grand Archmage"
+description = "a grand archmage"
+speed = 230
+maxsoul = 400
+attackspeed = 2000
+promotedfrom = 10
+statsperlevel = [
+    {cap = 10, hp = 5, mana = 65}
+]
+regeneration = [
+    {hp = {amount = 18, interval = 6}},
+    {mana = {amount = 65, interval = 2}},
+    {soul = {amount = 1, interval = 6}}
+]
+damagemodifiers = [
+    {armor = 1.0, defense = 1.0, distance = 1.0, melee = 1.25}
+]
+skillrates = [
+    {magic = 1.0, fist = 2.0, club = 2.0, sword = 2.0, axe = 2.0, distance = 2.0, shield = 2.0, fishing = 1.1}
+]

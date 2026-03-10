@@ -1,0 +1,819 @@
+[strangeTalisman]
+name = "strange talisman"
+modifiers = [
+	{ mod = "resist", value = 10, damage = "energy"}
+]
+
+[mightRing]
+name = "might ring"
+modifiers = [
+	{ mod = "resist", value = 20, damage = "energy"},
+    { mod = "resist", value = 20, damage = "fire"},
+    { mod = "resist", value = 20, damage = "earth"},
+    { mod = "resist", value = 20, damage = "ice"},
+    { mod = "resist", value = 20, damage = "holy"},
+    { mod = "resist", value = 20, damage = "death"},
+    { mod = "resist", value = 20, damage = "physical"}
+]
+
+[silverAmulet]
+name = "silver amulet"
+modifiers = [
+	{ mod = "resist", value = 10, damage = "earth"}
+]
+
+[bronzeAmulet]
+name = "bronze amulet"
+modifiers = [
+	{ mod = "resist", value = 20, damage = "manadrain"}
+]
+
+
+[stoneSkinAmulet]
+name = "stone skin amulet"
+modifiers = [
+    { mod = "resist", value = 80, damage = "death"},
+    { mod = "resist", value = 80, damage = "physical"}
+]
+
+
+[elvenAmulet]
+name = "elven amulet"
+modifiers = [
+    { mod = "resist", value = 5, damage = "earth"},
+    { mod = "resist", value = 5, damage = "energy"},
+    { mod = "resist", value = 5, damage = "fire"},
+    { mod = "resist", value = 5, damage = "ice"},
+    { mod = "resist", value = 5, damage = "holy"},
+    { mod = "resist", value = 5, damage = "death"},
+    { mod = "resist", value = 5, damage = "physical"}
+]
+
+
+[garlicNecklace]
+name = "garlic necklace"
+modifiers = [
+	{ mod = "resist", value = 20, damage = "lifedrain"}
+]
+
+
+[protectionAmulet]
+name = "protection amulet"
+modifiers = [
+	{ mod = "resist", value = 6, damage = "physical"}
+]
+
+
+[dragonNecklace]
+name = "dragon necklace"
+modifiers = [
+	{ mod = "resist", value = 8, damage = "fire"}
+]
+
+
+[dwarvenHelmet]
+name = "dwarven helmet"
+modifiers = [
+	{ mod = "resist", value = 2, damage = "physical"}
+]
+
+
+[dwarvenArmor]
+name = "dwarven armor"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "physical"}
+]
+
+
+[dwarvenLegs]
+name = "dwarven legs"
+modifiers = [
+	{ mod = "resist", value = 3, damage = "physical"}
+]
+
+
+[woodCape]
+name = "wood cape"
+modifiers = [
+	{ mod = "resist", value = 4, damage = "earth"}
+]
+
+
+[helmetOfTheDeep]
+name = "helmet of the deep"
+modifiers = [
+	{ mod = "resist", value = 100, damage = "drown"}
+]
+
+
+[deathRing]
+name = "death ring"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "death"}
+]
+
+
+[pairOfEarmuffs]
+name = "pair of earmuffs"
+modifiers = [
+	{ mod = "resist", value = 2, damage = "ice"}
+]
+
+
+
+[terraMantle]
+name = "terra mantle"
+modifiers = [
+	{ mod = "resist", value = 8, damage = "earth"},
+	{ mod = "weakness", value = 8, damage = "fire"}
+]
+
+
+[terraLegs]
+name = "terra legs"
+modifiers = [
+	{ mod = "resist", value = 6, damage = "earth"},
+	{ mod = "weakness", value = 6, damage = "fire"}
+]
+
+[terraBoots]
+name = "terra boots"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "earth"},
+	{ mod = "weakness", value = 5, damage = "fire"}
+]
+
+
+[terraAmulet]
+name = "terra amulet"
+modifiers = [
+	{ mod = "resist", value = 20, damage = "earth"},
+	{ mod = "weakness", value = 10, damage = "fire"}
+]
+
+
+[glacierAmulet]
+name = "glacier amulet"
+modifiers = [
+	{ mod = "resist", value = 20, damage = "ice"},
+	{ mod = "weakness", value = 10, damage = "energy"}
+]
+
+
+[lightningPendant]
+name = "lightning pendant"
+modifiers = [
+	{ mod = "resist", value = 20, damage = "energy"},
+	{ mod = "weakness", value = 10, damage = "earth"}
+]
+
+
+[magmaAmulet]
+name = "magma amulet"
+modifiers = [
+	{ mod = "resist", value = 20, damage = "fire"},
+	{ mod = "weakness", value = 10, damage = "ice"}
+]
+
+
+[magmaBoots]
+name = ""
+modifiers = [
+	{ mod = "resist", value = 5, damage = "fire"},
+	{ mod = "weakness", value = 5, damage = "ice"}
+]
+
+
+[glacierShoes]
+name = "glacier shoes"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "ice"},
+	{ mod = "weakness", value = 5, damage = "energy"}
+]
+
+
+[lightningBoots]
+name = "lightning boots"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "energy"},
+	{ mod = "weakness", value = 5, damage = "earth"}
+]
+
+
+[magmaLegs]
+name = "magma legs"
+modifiers = [
+	{ mod = "resist", value = 6, damage = "fire"},
+	{ mod = "weakness", value = 6, damage = "ice"}
+]
+
+
+
+[lightningLegs]
+name = "lightning legs"
+modifiers = [
+	{ mod = "resist", value = 6, damage = "energy"},
+	{ mod = "weakness", value = 6, damage = "earth"}
+]
+
+
+
+[glacierKilt]
+name = "glacier kilt"
+modifiers = [
+	{ mod = "resist", value = 6, damage = "ice"},
+	{ mod = "weakness", value = 6, damage = "energy"}
+]
+
+
+
+[glacierRobe]
+name = "glacier robe"
+modifiers = [
+	{ mod = "resist", value = 8, damage = "ice"},
+	{ mod = "weakness", value = 8, damage = "energy"}
+]
+
+
+
+[lightningRobe]
+name = "lightning robe"
+modifiers = [
+	{ mod = "resist", value = 8, damage = "energy"},
+	{ mod = "weakness", value = 8, damage = "earth"}
+]
+
+
+
+[magmaCoat]
+name = "magma coat"
+modifiers = [
+	{ mod = "resist", value = 8, damage = "fire"},
+	{ mod = "weakness", value = 8, damage = "ice"}
+]
+
+
+
+[magmaMonocle]
+name = "magma monocle"
+modifiers = [
+	{ mod = "resist", value = 4, damage = "fire"},
+	{ mod = "weakness", value = 5, damage = "ice"}
+]
+
+
+
+[lightningHeadband]
+name = "lightning headband"
+modifiers = [
+	{ mod = "resist", value = 4, damage = "energy"},
+	{ mod = "weakness", value = 5, damage = "earth"}
+]
+
+
+
+[glacierMask]
+name = "glacier mask"
+modifiers = [
+	{ mod = "resist", value = 4, damage = "ice"},
+	{ mod = "weakness", value = 5, damage = "energy"}
+]
+
+
+
+[terraHood]
+name = "terra hood"
+modifiers = [
+	{ mod = "resist", value = 4, damage = "earth"},
+	{ mod = "weakness", value = 5, damage = "fire"}
+]
+
+
+[kosheisAmulet]
+name = "koshei's ancient amulet"
+modifiers = [
+	{ mod = "resist", value = 8, damage = "death"},
+	{ mod = "weakness", value = 50, damage = "holy"}
+]
+
+
+[witchhuntersCoat]
+name = "witchhunter's coat"
+modifiers = [
+	{ mod = "resist", value = 2, damage = "death"},
+	{ mod = "weakness", value = 2, damage = "holy"}
+]
+
+
+[darklordsCape]
+name = "dark lord's cape"
+modifiers = [
+	{ mod = "resist", value = 8, damage = "death"},
+	{ mod = "weakness", value = 8, damage = "holy"}
+]
+
+
+[robeOfIceQueen]
+name = "the robe of the ice queen"
+modifiers = [
+	{ mod = "resist", value = 12, damage = "ice"},
+	{ mod = "weakness", value = 12, damage = "energy"}
+]
+
+
+[dragonRobe]
+name = "dragon robe"
+modifiers = [
+	{ mod = "resist", value = 12, damage = "fire"},
+	{ mod = "weakness", value = 12, damage = "ice"}
+]
+
+
+[velvetMantle]
+name = "velvet mantle"
+modifiers = [
+	{ mod = "resist", value = 12, damage = "energy"},
+	{ mod = "weakness", value = 12, damage = "earth"}
+]
+
+
+[greenwoodCoat]
+name = "greenwood coat"
+modifiers = [
+	{ mod = "resist", value = 12, damage = "earth"},
+	{ mod = "weakness", value = 12, damage = "fire"}
+]
+
+
+[summerDress]
+name = "summer dress"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "death"}
+]
+
+
+[lavosArmor]
+name = "lavos armor"
+modifiers = [
+	{ mod = "resist", value = 3, damage = "fire"},
+	{ mod = "weakness", value = 3, damage = "ice"}
+]
+
+
+[crystallineArmor]
+name = "crystalline armor"
+modifiers = [
+	{ mod = "resist", value = 3, damage = "ice"},
+	{ mod = "weakness", value = 3, damage = "energy"}
+]
+
+
+[voltageArmor]
+name = "voltage armor"
+modifiers = [
+	{ mod = "resist", value = 3, damage = "energy"},
+	{ mod = "weakness", value = 3, damage = "earth"}
+]
+
+
+[swamplairArmor]
+name = "swamplair armor"
+modifiers = [
+	{ mod = "resist", value = 3, damage = "earth"},
+	{ mod = "weakness", value = 3, damage = "fire"}
+]
+
+
+[firebornGiantArmor]
+name = "fireborn giant armor"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "fire"},
+	{ mod = "weakness", value = 5, damage = "ice"}
+]
+
+
+[earthbornGiantArmor]
+name = "earthborn giant armor"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "earth"},
+	{ mod = "weakness", value = 5, damage = "fire"}
+]
+
+
+[windbornColossusArmor]
+name = "windborn colossus armor"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "energy"},
+	{ mod = "weakness", value = 5, damage = "earth"}
+]
+
+
+[oceanbornColossusArmor]
+name = "oceanborn colossus armor"
+modifiers = [
+    { mod = "resist", value = 5, damage = "ice"},
+    { mod = "weakness", value = 5, damage = "energy"}
+]
+
+
+[divinePlate]
+name = "divine plate"
+modifiers = [
+	{ mod = "resist", value = 10, damage = "death"},
+	{ mod = "weakness", value = 10, damage = "holy"}
+]
+
+
+[moltenPlate]
+name = "molten plate"
+modifiers = [
+	{ mod = "resist", value = 7, damage = "fire"},
+	{ mod = "weakness", value = 7, damage = "ice"}
+]
+
+
+[frozenPlate]
+name = "frozen plate"
+modifiers = [
+	{ mod = "resist", value = 7, damage = "ice"},
+	{ mod = "weakness", value = 7, damage = "energy"}
+]
+
+
+[skullcrackerArmor]
+name = "skullcracker armor"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "death"},
+	{ mod = "weakness", value = 5, damage = "holy"}
+]
+
+
+[robeOfTheUnderworld]
+name = "robe of the underworld"
+modifiers = [
+	{ mod = "resist", value = 12, damage = "death"},
+	{ mod = "weakness", value = 12, damage = "holy"}
+]
+
+
+[yalahariArmor]
+name = "yalahari armor"
+modifiers = [
+	{ mod = "resist", value = 3, damage = "death"}
+]
+
+
+[yalahariLegs]
+name = "yalahari leg piece"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "death"}
+]
+
+
+[bonfireAmulet]
+name = "bonfire amulet"
+modifiers = [
+	{ mod = "resist", value = 60, damage = "physical"},
+	{ mod = "resist", value = 40, damage = "fire"}
+]
+
+
+[sacredTreeAmulet]
+name = "sacred tree amulet"
+modifiers = [
+	{ mod = "resist", value = 60, damage = "physical"},
+	{ mod = "resist", value = 40, damage = "earth"}
+]
+
+
+[leviathansAmulet]
+name = "leviathan's amulet"
+modifiers = [
+	{ mod = "resist", value = 60, damage = "physical"},
+	{ mod = "resist", value = 40, damage = "ice"}
+]
+
+
+[shockwaveAmulet]
+name = "shockwave amulet"
+modifiers = [
+	{ mod = "resist", value = 60, damage = "physical"},
+	{ mod = "resist", value = 40, damage = "energy"}
+]
+
+
+[witchHat]
+name = "witch hat"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "manadrain"}
+]
+
+
+[crystalBoots]
+name = "crystal boots"
+modifiers = [
+	{ mod = "resist", value = 3, damage = "ice"},
+	{ mod = "weakness", value = 3, damage = "energy"}
+]
+
+
+[dragonScaleBoots]
+name = "dragon scale boots"
+modifiers = [
+	{ mod = "resist", value = 3, damage = "fire"},
+	{ mod = "weakness", value = 3, damage = "ice"}
+]
+
+
+[guardianBoots]
+name = "guardian boots"
+modifiers = [
+    { mod = "resist", value = 2, damage = "physical"},
+	{ mod = "weakness", value = 2, damage = "holy"}
+]
+
+
+[zaoanHelmet]
+name = "zaoan helmet"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "physical"}
+]
+
+
+[zaoanLegs]
+name = "zaoan legs"
+modifiers = [
+	{ mod = "resist", value = 2, damage = "physical"}
+]
+
+
+[spellweaverRobe]
+name = "spellweaver robe"
+modifiers = [
+	{ mod = "resist", value = 10, damage = "energy"},
+	{ mod = "weakness", value = 10, damage = "earth"}
+]
+
+
+[zaoanRobe]
+name = "zaoan robe"
+modifiers = [
+	{ mod = "resist", value = 10, damage = "fire"},
+	{ mod = "weakness", value = 10, damage = "ice"}
+]
+
+
+[cobraCrown]
+name = "cobra crown"
+modifiers = [
+	{ mod = "resist", value = 5, damage = "fire"},
+	{ mod = "weakness", value = 5, damage = "earth"}
+]
+
+[royalDrakenMail]
+name = "royal draken mail"
+modifiers = [
+    { mod = "resist", value = 5, damage = "physical"}
+]
+
+
+[royalScaleRobe]
+name = "royal scale robe"
+modifiers = [
+    { mod = "resist", value = 5, damage = "fire"}
+]
+
+[eliteDrakenHelmet]
+name = "elite draken helmet"
+modifiers = [
+    { mod = "resist", value = 3, damage = "death"}
+]
+
+[magesCap]
+name = "mage's cap"
+modifiers = [
+    { mod = "resist", value = 4, damage = "fire"}
+]
+
+[necklaceOfTheDeep ]
+name = "necklace of the deep"
+modifiers = [
+    { mod = "resist", value = 50, damage = "lifedrain"}
+]
+
+[ornateChestplate]
+name = "ornate chestplate"
+modifiers = [
+    { mod = "resist", value = 8, damage = "physical"}
+]
+
+[deapthLorica]
+name = "deapth lorica"
+modifiers = [
+    { mod = "resist", value = 5, damage = "death"}
+]
+
+[deathGalea]
+name = "death galea"
+modifiers = [
+    { mod = "resist", value = 100, damage = "drown"}
+]
+
+[deathOcrea]
+name = "death ocrea"
+modifiers = [
+    { mod = "resist", value = 15, damage = "manadrain"}
+]
+
+[depthCalcei]
+name = "depth calcei"
+modifiers = [
+    { mod = "resist", value = 5, damage = "physical"}
+]
+
+[ornateLegs]
+name = "ornate legs"
+modifiers = [
+    { mod = "resist", value = 5, damage = "fiphysicalre"}
+]
+
+[ornateShield]
+name = "ornate shield"
+modifiers = [
+    { mod = "resist", value = 5, damage = "physical"}
+]
+
+[calopteryxCape]
+name = "calopteryx cape"
+modifiers = [
+    { mod = "resist", value = 5, damage = "ice"}
+]
+
+[spellbookOfAncientArcana]
+name = "spellbook of ancient arcana"
+modifiers = [
+    { mod = "resist", value = 5, damage = "death"}
+]
+
+[gillGugel]
+name = "gill gugel"
+modifiers = [
+    { mod = "resist", value = 6, damage = "earth"},
+    { mod = "weakness", value = 6, damage = "fire"}
+]
+
+[gillCoat]
+name = "gill coat"
+modifiers = [
+    { mod = "resist", value = 10, damage = "earth"},
+    { mod = "weakness", value = 10, damage = "fire"}
+]
+
+[gillLegs]
+name = "gill legs"
+modifiers = [
+    { mod = "resist", value = 8, damage = "earth"},
+    { mod = "weakness", value = 8, damage = "fire"}
+]
+
+[spellbookOfVigilance]
+name = "spellbook of vigilance"
+modifiers = [
+    { mod = "resist", value = 3, damage = "earth"},
+    { mod = "weakness", value = 3, damage = "fire"}
+]
+
+[gillNecklace]
+name = "gill necklace"
+modifiers = [
+    { mod = "resist", value = 15, damage = "physical"},
+    { mod = "resist", value = 10, damage = "earth"}
+]
+
+[prismaticHelmet]
+name = "prismatic helmet"
+modifiers = [
+    { mod = "resist", value = 5, damage = "physical"}
+]
+
+[prismaticArmor]
+name = "prismatic armor"
+modifiers = [
+    { mod = "resist", value = 5, damage = "physical"}
+]
+
+[prismaticLegs]
+name = "prismatic legs"
+modifiers = [
+    { mod = "resist", value = 3, damage = "physical"}
+]
+
+[prismaticBoots]
+name = "prismatic boots"
+modifiers = [
+    { mod = "resist", value = 3, damage = "death"}
+]
+
+[prismaticNecklace]
+name = "prismatic necklace"
+modifiers = [
+    { mod = "resist", value = 10, damage = "physical"},
+    { mod = "resist", value = 15, damage = "energy"}
+]
+
+[prismaticRing]
+name = "prismatic ring"
+modifiers = [
+    { mod = "resist", value = 10, damage = "physical"},
+    { mod = "resist", value = 8, damage = "energy"}
+]
+
+[prismaticShield]
+name = "prismatic shield"
+modifiers = [
+    { mod = "resist", value = 4, damage = "physical"}
+]
+
+[icyCulotte]
+name = "icy culotte"
+modifiers = [
+    { mod = "resist", value = 8, damage = "ice"}
+]
+
+[gooShell]
+name = "goo shell"
+modifiers = [
+    { mod = "resist", value = 2, damage = "earth"},
+    { mod = "weakness", value = 2, damage = "fire"}
+]
+
+[furiousFrock]
+name = "furious frock"
+modifiers = [
+    { mod = "resist", value = 5, damage = "fire"}
+]
+
+[crudeUmbralSpellbook]
+name = "crude umbral spellbook"
+modifiers = [
+    { mod = "resist", value = 2, damage = "earth"},
+    { mod = "resist", value = 2, damage = "fire"},
+    { mod = "resist", value = 2, damage = "ice"},
+    { mod = "resist", value = 2, damage = "energy"}
+]
+
+[umbralSpellbook]
+name = "umbral spellbook"
+modifiers = [
+    { mod = "resist", value = 3, damage = "earth"},
+    { mod = "resist", value = 3, damage = "fire"},
+    { mod = "resist", value = 3, damage = "ice"},
+    { mod = "resist", value = 3, damage = "energy"}
+]
+
+[umbralMasterSpellbook]
+name = "umbral master spellbook"
+modifiers = [
+    { mod = "resist", value = 5, damage = "earth"},
+    { mod = "resist", value = 5, damage = "fire"},
+    { mod = "resist", value = 5, damage = "ice"},
+    { mod = "resist", value = 5, damage = "energy"}
+]
+
+[gloothCape]
+name = "glooth cape"
+modifiers = [
+    { mod = "resist", value = 5, damage = "earth"},
+    { mod = "weakness", value = 5, damage = "fire"}
+]
+
+[rubberCap]
+name = "rubber cap"
+modifiers = [
+    { mod = "resist", value = 3, damage = "earth"},
+    { mod = "weakness", value = 3, damage = "fire"}
+]
+
+[metalSpats]
+name = "metal spats"
+modifiers = [
+    { mod = "resist", value = 1, damage = "physical"}
+]
+
+[gloothAmulet]
+name = "glooth amulet"
+modifiers = [
+    { mod = "resist", value = 10, damage = "earth"},
+    { mod = "resist", value = 10, damage = "energy"},
+    { mod = "resist", value = 10, damage = "fire"},
+    { mod = "resist", value = 10, damage = "ice"},
+    { mod = "resist", value = 10, damage = "holy"},
+    { mod = "resist", value = 10, damage = "death"},
+    { mod = "resist", value = 10, damage = "physical"}
+]
+
+[crestOfTheDeepSeas]
+name = "crest of the deep seas"
+modifiers = [
+    { mod = "resist", value = 5, damage = "ice"}
+]
