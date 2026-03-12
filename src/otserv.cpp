@@ -23,6 +23,8 @@
 #include <fmt/color.h>
 #include "augments.h"
 #include "zones.h"
+#include "console.h"
+#include <memory>
 
 #if __has_include("gitmetadata.h")
 	#include "gitmetadata.h"
