@@ -9164,7 +9164,7 @@ charges = 2
 [[items]]
 id = 2270
 article = "a"
-name = "spell rune"
+name = "medium mana rune"
 type = "rune"
 weight = 120
 
@@ -9212,7 +9212,7 @@ weight = 120
 [[items]]
 id = 2276
 article = "a"
-name = "spell rune"
+name = "small mana rune"
 type = "rune"
 weight = 120
 
@@ -9274,7 +9274,7 @@ weight = 120
 [[items]]
 id = 2284
 article = "a"
-name = "spell rune"
+name = "great mana rune"
 type = "rune"
 weight = 120
 
@@ -9362,7 +9362,7 @@ charges = 3
 [[items]]
 id = 2294
 article = "a"
-name = "spell rune"
+name = "supreme mana rune"
 type = "rune"
 weight = 120
 
@@ -9406,7 +9406,7 @@ weight = 120
 [[items]]
 id = 2300
 article = "a"
-name = "spell rune"
+name = "ultimate mana rune"
 type = "rune"
 weight = 120
 
