@@ -112,7 +112,7 @@ local function onManaRune(player, item, fromPosition, target, toPosition, isHotk
     local maxMana     = player:getMaxMana()
     if currentMana >= maxMana then
         player:sendCancelMessage("You already have full mana.")
-        player:getPosition():sendMagicEffect(CONST_ME_POFF)
+        -- player:getPosition():sendMagicEffect(CONST_ME_POFF)
         return true
     end
 
